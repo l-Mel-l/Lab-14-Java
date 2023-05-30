@@ -15,6 +15,7 @@ public class Main {
             System.out.println(text);  //Вывод с комментариями
             result = text.toString().replaceAll("//.*", "").replaceAll("/\\*(.|\\n)*?\\*/","");
             System.out.println(result); //Вывод без комментариев
+            reader.close();
 
         }
         catch(IOException ex){
